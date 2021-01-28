@@ -1,9 +1,12 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import db from '../db.json'
 import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer'
 import GitHubConner from '../src/components/GitHubConner'
 import QuizBackground from '../src/components/QuizBackground'
+import Head from 'next/head'
+
 
 /*const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -24,30 +27,32 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
-
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <Widget>
-          <Widget.Header>
-              <h1>Corrida, um estado de espírito </h1>
-          </Widget.Header>
-          <Widget.Content>
-            
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
+    <>
+      <Head>
+        <meta property="og:url" content="https://blog.runplace.com.br/wp-content/uploads/2020/05/retorno-aos-treinos-de-corrida-780x450.jpg" />
+      </Head>
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <Widget>
+            <Widget.Header>
+                <h1>Corrida, um estado de espírito </h1>
+            </Widget.Header>
             <Widget.Content>
-              <h1>Quizes da galera </h1>
               <p>lorem ipsum dolor sit amet...</p>
             </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer> 
-      <GitHubConner projectUrl="https://github.com/thiagoalvesec" />
-    </QuizBackground>
+          </Widget>
+          <Widget>
+              <Widget.Content>
+                <h1>Quizes da galera </h1>
+                <p>lorem ipsum dolor sit amet...</p>
+              </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer> 
+        <GitHubConner projectUrl="https://github.com/thiagoalvesec" />
+      </QuizBackground>
+    </>
   );
 }
