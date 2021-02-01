@@ -4,30 +4,142 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/hT0RvC5K1Wa2U3stSe/giphy.gif",
+        "title": "Como começar a correr?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Vou na fé e com tudo que vai dar certo!",
+          "Vou com calma, respeitando meu corpo, ritmo e com consistência",
+          "Existe apenas um jeito de começar, funciona igual para todo mundo",
+          "Vou começar bem, ficar parado uns meses e voltar no mesmo ritmo que era acostumado"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/xT0xeFRr0W3sAxjw8o/giphy.gif",
+        "title": "Como evitar lesões?",
+        "description": "ainda aquecendo...",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Musculação e descanso adequado ajudam a prevenir lesões",
+           "Descansar nunca é demais",
+           "Treinar somente a corrida já é o suficiente",
+           "Treino a vontade e sem descanso assim o corpo fica mais forte e resistente"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3o7TKxsGOn9duzkkxy/giphy.gif",
+        "title": "Quantos metros tem em uma pista de atletismo?",
+        "description": "Essa é para quem curte atletismo",
+        "answer": 2,
+        "alternatives": [
+           "100m",
+           "200m",
+           "400m",
+           "600m",
+           "800m",
+           "1000m"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xT5LMu002LiWzUrRyE/giphy.gif",
+        "title": "Qual o tamanho oficial maratona?",
+        "description": "Essa é para corredores de rua",
+        "answer": 0,
+        "alternatives": [
+           "42km",
+           "24km",
+           "30km",
+           "21,5km",
+           "45km"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/WT3PS1OKzjJqGAExbt/giphy.gif",
+        "title": "Qual o tamanho oficial de uma meia de uma maratona?",
+        "description": "Se acertou a anterior, essa tá fácil!",
+        "answer": 3,
+        "alternatives": [
+           "42km",
+           "24km",
+           "30km",
+           "21,5km",
+           "45km"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/f68JjyhVCRJNgGmLrX/giphy.gif",
+        "title": "Qual músculo é bom treinar para descidas ou desaceleração?",
+        "description": "Importante treinar músculo de desaceleração também haha",
+        "answer": 0,
+        "alternatives": [
+           "Posterior",
+           "Anterior",
+           "Vaso lateral",
+           "Vaso dianteiro",
+           "Panturrilha"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/LPrkD2SKYMtqEgXVOn/giphy.gif",
+        "title": "Qual músculo é bom treinar para aumentar a aceleração de maneira geral?",
+        "description": "Corredores marombas ou corredores precavidos?",
+        "answer": 1,
+        "alternatives": [
+          "Posterior",
+          "Anterior",
+          "Vaso lateral",
+          "Vaso dianteiro",
+          "Panturrilha"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/m9Sd66xbjtmvCGaIjK/giphy.gif",
+        "title": "Para participar de um evento de corrida de rua preciso ser um corredor nato?",
+        "description": "Depende do seu físico ou mente?",
+        "answer": 2,
+        "alternatives": [
+           "Sim, só quem já é/nasceu atlético ou já fazia isso desde mais novo",
+           "Não, só cadastrar em uma prova de 10km e vrau",
+           "Não, com preparo, dedicação e paciência corre até uma maratona se quiser",
+           "Não, não sou bom nisso mas poderia me cadastrar em uma prova de 5km sem preparo nenhum mesmo estando 20 anos sem atividades físicas",
+           "Sim, impossível para quem tem mais idade ou mais gordura corporal acima da média",
+           "Sim, não sou do tipo corredor. Impossível para mim"
+        ]
+      },
+      {
+        "image": "https://imagens.ebc.com.br/yloC3SDg7x7s9GNaEF7jk38CB6g=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2019-12-31t131239z_2021095063_rc2d6e9dp5xc_rtrmadp_3_brazil-race-sao-silvestre.jpg?itok=t7tjiLv3",
+        "title": "Quantos km tem a prova da São Silvestre? Considerando a modalidade mais famosa da prova",
+        "description": "Aquela prova linda que todo corredor quer pelo menos uma vez",
+        "answer": 3,
+        "alternatives": [
+           "42 km",
+           "21,5 km",
+           "16 km",
+           "15 km",
+           "12 km",
+           "10 km"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/vD61s8D5m9k1WzUefn_n0MBi734=/0x0:3539x2170/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2017/i/F/suZe7BTUugEAOKNWHKcA/rib4845.jpg",
+        "title": "Quem é o último recordista da São Silvestre e seu tempo? Dica na imagem...",
+        "description": "Somente os brabos",
+        "answer": 3,
+        "alternatives": [
+           "Paul Tergat, 43m12s",
+           "Jacob Kiplimo 43m12s",
+           "Paul Tergat, 45m12s",
+           "Kibiwott Kandie 42min59s",
+           "Jacob Kiplimo 44m12s",
+           "Kibiwott Kandie 43min59s"
         ]
       }
     ],
     "external": [
-      "htpps://aluraquiz-css.omariosouto.vercel.app/"
+      "htpps://aluraquiz-css.omariosouto.vercel.app/",
+      "https://got-quiz-next-js.matheus13f.vercel.app/",
+      "https://quiz-next-js.rodrigoandradebcc.vercel.app/"
     ],
     "theme": {
       "colors": {

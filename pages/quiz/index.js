@@ -1,13 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
 import styled from 'styled-components';
 
-import db from '../db.json';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import QuizBackground from '../src/components/QuizBackground';
-import Widget from '../src/components/Widget';
-import Button from '../src/components/Button';
+import db from '../../db.json';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import QuizBackground from '../../src/components/QuizBackground';
+import Widget from '../../src/components/Widget';
+import Button from '../../src/components/Button';
+import AluraLogo from '../../src/components/AluraLogo';
 
 
 
@@ -24,30 +24,31 @@ export const QuizButton = styled.button`
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
-      <Widget.Header>
-        Tela de Resultado:
-      </Widget.Header>
 
-      <Widget.Content>
-        <p>
-          Você acertou {' '} {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if(isAcerto){
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} perguntas
-        </p>
-        <ul>
-          {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #{`${index + 1} `} Resultado: {result === true ? 'Acertou' : 'Errou'}
-            </li>
-          ))}
-        </ul>
-      </Widget.Content>
-    </Widget>
+      <Widget>
+        <Widget.Header>
+          Tela de Resultado:
+        </Widget.Header>
+
+        <Widget.Content>
+          <p>
+            Você acertou {' '} {results.reduce((somatoriaAtual, resultAtual) => {
+              const isAcerto = resultAtual === true;
+              if(isAcerto){
+                return somatoriaAtual + 1;
+              }
+              return somatoriaAtual;
+            }, 0)} perguntas
+          </p>
+          <ul>
+            {results.map((result, index) => (
+              <li key={`result__${result}`}>
+                #{`${index + 1} `} Resultado: {result === true ? 'Acertou' : 'Errou'}
+              </li>
+            ))}
+          </ul>
+        </Widget.Content>
+      </Widget>
   );
 }
 
@@ -84,8 +85,8 @@ function QuestionWidget({
             <h3>
                {`Pergunta ${questionIndex + 1} de ${totalQuestions}`} 
             </h3>
-            
           </Widget.Header>
+
           <img
             alt="Descrição"
             style={{
@@ -195,6 +196,7 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+      <AluraLogo />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget 
             question={question} 
